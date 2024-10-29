@@ -1,0 +1,460 @@
+/* Dark theme colors */
+body {
+    background-color: #f8f9fa;
+    color: #f0f0f0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d1d1d1;
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-shrink {
+    background-color: transparent !important;
+}
+
+.navbar-shrink .btn {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    color: #000;
+}
+
+.section-blank {
+    padding: 80px 20px;
+    min-height: 10vh;
+    color: #000;
+}
+
+
+.bg-dark-section {
+    background-color: #000;
+    color: #f0f0f0;
+}
+
+.nav-link.active {
+    /* color: #0d6efd; */
+    /* Bootstrap primary color or choose your own */
+    font-weight: bold;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #64a19d;
+    --bs-btn-border-color: #64a19d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #558985;
+    --bs-btn-hover-border-color: #50817e;
+    --bs-btn-focus-shadow-rgb: 123, 175, 172;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #50817e;
+    --bs-btn-active-border-color: #4b7976;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #64a19d;
+    --bs-btn-disabled-border-color: #64a19d;
+}
+
+.masthead h1,
+.masthead .h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.4rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.masthead a,
+.masthead .a {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+
+    .masthead h1,
+    .masthead .h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .masthead h1,
+    .masthead .h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about-section p {
+    margin-bottom: 5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Title Styling */
+h2.text-center {
+    color: #000;
+    /* Black text for the title */
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* List Group Items */
+.list-group-item {
+    background-color: #333;
+    /* Dark background */
+    color: #f5f5f5;
+    /* Light text for contrast */
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-group-item:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading for Each Item */
+.list-group-item h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+/* Paragraph and Small Text */
+.list-group-item p,
+.list-group-item small {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Bullet Point Style */
+.list-group {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 576px) {
+    h2.text-center {
+        font-size: 2rem;
+    }
+
+    .list-group-item {
+        padding: 15px;
+    }
+
+    .list-group-item h5 {
+        font-size: 1.15rem;
+    }
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#skills h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #444;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+/* Hover Effects */
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background-color: #444;
+    /* Subtle color shift */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skill-card {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Skills Graph Section */
+#skills-graph {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#skills-graph h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Skill Bars */
+.skill-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-label {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.bar-container {
+    width: 80%;
+    background-color: #ddd;
+    border: 1px solid #444;
+    height: 25px;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    background-color: #333;
+    transition: width 0.4s ease;
+}
+
+/* Individual Skill Levels (Adjust Widths Here) */
+.html-bar {
+    width: 85%;
+}
+
+.css-bar {
+    width: 75%;
+}
+
+.js-bar {
+    width: 82%;
+}
+
+.react-bar {
+    width: 52%;
+}
+
+.bootstrap-bar {
+    width: 68%;
+}
+
+.tailwind-bar {
+    width: 30%;
+}
+
+.node-bar {
+    width: 74%;
+}
+
+.ts-bar {
+    width: 47%;
+}
+
+.mongo-bar {
+    width: 68%;
+}
+
+.mysql-bar {
+    width: 35%;
+}
+
+/* Hover Effect for Bars */
+.bar:hover {
+    background-color: #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    #skills-graph h2 {
+        font-size: 2rem;
+    }
+
+    .skill-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-label {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .bar-container {
+        width: 100%;
+    }
+}
+
+
+
+.signup-section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.signup-section .form-signup input {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    height: auto;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+.contact-section {
+    padding-top: 5rem;
+}
+
+.card-body p {
+    color: #64a19d !important;
+    border: 0;
+}
+
+.contact-section .card h4,
+.contact-section .card .h4 {
+    font-size: 0.8rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+    opacity: 1;
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+}
+
+.contact-section .social {
+    margin-top: 5rem;
+}
+
+.contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+    color: #fff;
+}
+
+.footer {
+    padding: 5rem 0;
+}
